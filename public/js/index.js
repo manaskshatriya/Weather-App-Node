@@ -36,7 +36,7 @@ form.addEventListener('submit', (event) => {
     messageOne.innerHTML = "Loading..."
     messageTwo.innerHTML = ""
 
-    fetch('https://tranquil-citadel-53417.herokuapp/weather?address='+location).then((res) => {
+    fetch('https://tranquil-citadel-53417.herokuapp.com/weather?address='+location).then((res) => {
     res.json().then((data) => {
         if(data.error)
         {
